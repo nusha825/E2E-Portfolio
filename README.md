@@ -138,7 +138,7 @@ Made sure all changes were committed and pushed.
 
 ```bash
 git add .
-git commit -m "Updated portfolio"
+git commit -m "First commit"
 git push origin main
 ```
 
