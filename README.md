@@ -25,6 +25,23 @@ CSS: For styling and creating a visually appealing design.
 JavaScript: For interactive elements like theme switching and dynamic content.
 
 
+# 📂 File Structure
+
+```javascript
+
+.My-Profile
+├── index.html
+└── packages
+    ├── CSS
+    |   └── main.css
+    ├── images
+    └── JS
+        └── msin.js
+        
+```
+
+
+
 # How to Run the Project Locally
 Step 1: Open your terminal or command prompt.
 
@@ -52,10 +69,8 @@ git commit -m "Initial commit"
 
 Step 7: Link your local repository to GitHub:
 ```bash
- git remote add origin https://github.com/your-username/your-repo-
-name.git
+ git remote add origin https://github.com/nusha825/E2E-Portfolio.git
 ```
-(Replace your-username and your-repo-name accordingly.)
 
 Step 8: Push the files to GitHub:
 ```bash
@@ -132,7 +147,7 @@ Verified that GitHub Pages was enabled in the repository settings
 
 # 🚀 Live Demo
 
-https://nusha825.github.io/E2E-Portfolio/
+[Nusha-AGF](https://nusha825.github.io/E2E-Portfolio/)
 
 # 👩‍💻 Author
 
