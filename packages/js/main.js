@@ -1,3 +1,57 @@
+/*==================== Projects Array ====================*/
+// add more projects to projects array
+const projects = [
+  {
+    id: 0,
+    title: "Digital Banking",
+    image: "./packages/images/digitalBanking.jpeg",
+    description:
+      'A "web application project in Java" refers to developing a dynamic website or online application using the Java programming language, which typically involves building a backend system to handle data processing and user interactions, often utilizing frameworks like Spring MVC or JSF, to create a functional and interactive web experience for users; examples include online shopping platforms, user login systems, content management systems, and more, all powered by Java code on the server-side.',
+    link: "http",
+  },
+  {
+    id: 1,
+    title: "Weather Application",
+    image: "./packages/images/weather.jpeg",
+    description:
+      'A "weather application project in Java" refers to a software project developed using the Java programming language that retrieves real-time weather data from external APIs (like OpenWeatherMap) and presents it to users in a user-friendly interface, typically displaying details like temperature, humidity, wind speed, weather conditions, and forecasts for a specified location, allowing users to search for different cities and view updated weather information.',
+    link: "http",
+  },
+  {
+    id: 2,
+    title: "Android JAVA",
+    image: "./packages/images/java.jpeg",
+    description:
+      'A "mobile application project in Java" refers to developing a software application for smartphones or tablets using the Java programming language, primarily leveraging Android\'s development framework to create apps that can run on Android devices, as Java is the primary language used for Android app development; essentially, it means building mobile apps with features like user interfaces, data storage, network connectivity, and device sensors, all coded in Java.',
+    link: "http",
+  },
+];
+
+/*==================== Projects Section Setup ====================*/
+// projects array will map and get per project after those project details added to the project object templete.
+
+const projectItems = projects.map(
+  (project) =>
+    `<div class="portfolio__content grid swiper-slide">
+        <img src=${project.image} alt="" class="photo">
+        <div class="portfolio_">
+          <h3 class="portfolio__title">${project.title}</h3>
+          <p class="portfolio__description">${project.description}</p>
+          <a href=${project.link} class="button button--flex button--small portfolio__button">
+            Demo
+            <i class="uil uil-arrow-right button__icon"></i>
+          </a>
+        </div>
+      </div>`
+);
+//  it will apply to swiper-wrapper class to after mapping all projects
+
+document.getElementsByClassName("swiper-wrapper")[0].innerHTML = projectItems;
+console.log(projectItems);
+
+/*==================== END Projects Section Setup ====================*/
+
+
 /*==================== MENU SHOW Y HIDDEN ====================*/
 const navMenu = document.getElementById("nav-menu"),
   navToggle = document.getElementById("nav-toggle"),
